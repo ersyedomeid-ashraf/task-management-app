@@ -57,3 +57,16 @@ Case - 5 (Exit) :
 6 - End
 
 """
+
+
+def task():
+    tasks = []  # empty list
+    print("---Welcome To Task Management App---")
+
+    total_task = int(input("Enter how many task you want to add = "))
+
+    for i in range(1, total_task + 1):
+        task_name = input("Enter task {i} = ")  # enter task 2 =
+        task.append(task_name)
+
+    print(f"Today's tasks are\n {tasks}")
