@@ -70,3 +70,8 @@ def task():
         task.append(task_name)
 
     print(f"Today's tasks are\n {tasks}")
+
+    while True:
+        operation = int(
+            input("Enter 1- Add\n 2- Update\n 3- Delete\n 4- View\n 5- Exit/Stop/")
+        )
