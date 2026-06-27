@@ -52,4 +52,8 @@ Case - 5 (Exit) :
 - Show thank you messaeg and exit the app
 
 
+5 - Loop back to Menu (except when exit is choosen)
+
+6 - End
+
 """
