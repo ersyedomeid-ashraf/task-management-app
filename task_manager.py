@@ -90,3 +90,14 @@ def task():
                 task[ind] = up
 
                 print(f"Updated yask {up}")
+
+        elif operation == 3:
+            del_val = input("Enter task you want to delete = ")
+            if del_val in tasks:
+                ind = tasks.index(del_val)
+                del tasks[ind]
+
+                print(f"Task {del_val} has been deleted....")
+
+        elif operation == 4:
+            print(f"Total tasks = {tasks}")
