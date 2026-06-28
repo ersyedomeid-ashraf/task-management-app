@@ -67,7 +67,7 @@ def task():
 
     for i in range(1, total_task + 1):
         task_name = input("Enter task {i} = ")  # enter task 2 =
-        task.append(task_name)
+        tasks.append(task_name)
 
     print(f"Today's tasks are\n {tasks}")
 
@@ -78,7 +78,7 @@ def task():
 
         if operation == 1:
             add = input("Enter task you want to add = ")
-            task.append(add)
+            tasks.append(add)
 
             print(f"Task {add} has been successfully added....")
 
@@ -101,3 +101,14 @@ def task():
 
         elif operation == 4:
             print(f"Total tasks = {tasks}")
+
+        elif operation == 5:
+            print(f"Closing the program....")
+
+            break
+
+        else:
+            print("Invalid Input")
+
+
+task()
