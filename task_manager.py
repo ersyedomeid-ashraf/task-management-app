@@ -75,3 +75,18 @@ def task():
         operation = int(
             input("Enter 1- Add\n 2- Update\n 3- Delete\n 4- View\n 5- Exit/Stop/")
         )
+
+        if operation == 1:
+            add = input("Enter task you want to add = ")
+            task.append(add)
+
+            print(f"Task {add} has been successfully added....")
+
+        elif operation == 2:
+            updated_val = input("Enter the task name you want to update = ")
+            if updated_val in tasks:
+                up = int("Enter new task = ")
+                ind = tasks.index(updated_val)
+                task[ind] = up
+
+                print(f"Updated yask {up}")
